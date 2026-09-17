@@ -1,5 +1,5 @@
 :root {
-    --border: 1px solid rgb(0 0 0 / 0.2);               /* rgb(0 0 0 / 0.2) or rgba(0, 0, 0, 0.2) = means same thing. Wny use rgb/rgba instead of hexcode? Don't have to, but it's a good design technique. */
+    --border: 1px solid rgb(0 0 0 / 0.5);               /* rgb(0 0 0 / 0.2) or rgba(0, 0, 0, 0.2) = means same thing. Wny use rgb/rgba instead of hexcode? Don't have to, but it's a good design technique. */
     --padding: 2px; 
     --background-color: rgb(11, 126, 132);
 }
@@ -7,7 +7,7 @@
 
 nav {
     background-color: var(--background-color);
-    padding: var(--padding);
+    padding: 10px;
 }
 nav a {
     color: white;
