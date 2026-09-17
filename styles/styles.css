@@ -1,6 +1,6 @@
 :root {
     --border: 1px solid rgb(0 0 0 / 0.5);               /* rgb(0 0 0 / 0.2) or rgba(0, 0, 0, 0.2) = means same thing. Wny use rgb/rgba instead of hexcode? Don't have to, but it's a good design technique. */
-    --padding: 2px; 
+    --img-padding: 2px; 
     --background-color: rgb(11, 126, 132);
 }
 
@@ -24,7 +24,7 @@ main img {
     width: 150px;
     height: auto;
     border: var(--border);
-    padding: var(--padding);
+    padding: var(--img-padding);
     box-shadow: 0 0 30px gray;
 }
 p {
@@ -34,7 +34,7 @@ aside {
     width: 20rem;
     margin: 1rem;
     border: var(--border); 
-    padding: var(--padding);
+    padding: 20px;
     background-color: #eee;
     color: #333;
     text-align: center;
@@ -42,6 +42,7 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+    padding: var(--img-padding);
 }
 footer {
     margin-top: 15px;
