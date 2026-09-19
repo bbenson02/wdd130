@@ -1,6 +1,6 @@
 :root {
     --primary-color: #007da3; /* cerulean */
-    --secondary-color: 73A168; /* sage green */
+    --secondary-color: #73A168; /* sage green */
     --accent1-color: #bb4111; /* rusty spice */
     --accent2-color: #ffd449; /* mustard yellow */
     --heading-font: Georgia, Garamond, serif;
@@ -14,8 +14,8 @@
 }
 
 header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+    /* background-color: var(--primary-color); */
+    color: var(--secondary-color);
 }
 
 body {
@@ -38,13 +38,6 @@ nav, p, section, article {
     padding: 8px;
 }
 
-article {
-    position: absolute;
-    width: 100%;
-    padding: 16px;
-    background-color: var(--secondary-color);
-    color: #000;
-}
 
 h1 {
     position: absolute;
@@ -57,6 +50,13 @@ h1 {
     color: #fff /* white text - make sure there is enough contrast with the background-color */
 }
 
+article {
+    position: absolute;
+    width: 100%;
+    padding: 16px;
+    background-color: var(--secondary-color);
+    color: #000;
+}
 
 /* Class Selectors */
 
@@ -70,6 +70,7 @@ h1 {
 
 .hero article {
     position: absolute;
+    object-fit: cover;
 }
 
 .hero img {
