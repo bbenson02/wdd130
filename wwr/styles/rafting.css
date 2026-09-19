@@ -1,6 +1,6 @@
 :root {
     --primary-color: #007da3; /* cerulean */
-    --secondary-color: #344b2f; /* dark spruce */
+    --secondary-color: 73A168; /* sage green */
     --accent1-color: #bb4111; /* rusty spice */
     --accent2-color: #ffd449; /* mustard yellow */
     --heading-font: Georgia, Garamond, serif;
@@ -39,6 +39,7 @@ nav, p, section, article {
 }
 
 
+
 h1 {
     position: absolute;
     top: 20px;
@@ -54,6 +55,7 @@ article {
     position: absolute;
     width: 100%;
     padding: 16px;
+    background-color: var(--secondary-color);
 }
 
 /* Class Selectors */
@@ -70,6 +72,10 @@ article {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.hero article {
+    position: absolute;
 }
 
 .hero article img {
