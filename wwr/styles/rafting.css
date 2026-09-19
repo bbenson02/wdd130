@@ -38,7 +38,13 @@ nav, p, section, article {
     padding: 8px;
 }
 
-
+article {
+    position: absolute;
+    width: 100%;
+    padding: 16px;
+    background-color: var(--secondary-color);
+    color: #000;
+}
 
 h1 {
     position: absolute;
@@ -51,12 +57,6 @@ h1 {
     color: #fff /* white text - make sure there is enough contrast with the background-color */
 }
 
-article {
-    position: absolute;
-    width: 100%;
-    padding: 16px;
-    background-color: var(--secondary-color);
-}
 
 /* Class Selectors */
 
@@ -68,14 +68,14 @@ article {
     position: relative;
 }
 
+.hero article {
+    position: absolute;
+}
+
 .hero img {
     display: block;
     width: 100%;
     height: auto;
-}
-
-.hero article {
-    position: absolute;
 }
 
 .hero article img {
