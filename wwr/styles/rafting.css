@@ -62,7 +62,7 @@ article {
     width: 98%;
     padding: 16px;
     background-color: var(--secondary-color);
-    color: #000;
+    color: var(--accent2-color);
 }
 
 
