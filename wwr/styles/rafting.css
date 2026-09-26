@@ -1,6 +1,6 @@
 :root {
     --primary-color: #296888; /* cerulean */
-    --secondary-color: #a7c189; /* sage green */  /* #598773 */
+    --secondary-color: #598773; /* sage green */  /* #598773 #a7c189*/
     --accent1-color: #bb4111; /* rusty spice */
     --accent2-color: #052376; /* mustard yellow */
     --heading-font: Georgia, Garamond, serif;
@@ -62,7 +62,7 @@ article {
     width: 98%;
     padding: 16px;
     background-color: var(--secondary-color);
-    color: var(--accent2-color);
+    color: #fff;
 }
 
 
