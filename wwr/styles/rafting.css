@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #007da3; /* cerulean */
-    --secondary-color: #73A168; /* sage green */
+    --primary-color: #296888; /* cerulean */
+    --secondary-color: #a7c189; /* sage green */
     --accent1-color: #bb4111; /* rusty spice */
-    --accent2-color: #ffd449; /* mustard yellow */
+    --accent2-color: #052376; /* mustard yellow */
     --heading-font: Georgia, Garamond, serif;
     --body-font: Verdana, Arial, sans-serif;
 }
@@ -16,6 +16,9 @@
 header {
     /* background-color: var(--primary-color); */
     color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    align-items: center;
 }
 
 body {
@@ -31,6 +34,7 @@ header, main, footer {
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
 }
 
 nav, p, section, article {
@@ -46,19 +50,37 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     color: #fff /* white text - make sure there is enough contrast with the background-color */
 }
 
 article {
     position: absolute;
-    width: 100%;
+    bottom: 5px;
+    right: -5px;
+    left: -7px;
+    width: 98%;
     padding: 16px;
     background-color: var(--secondary-color);
     color: #000;
 }
 
+
 /* Class Selectors */
+
+.header img {
+    position: relative;
+    left: 50px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
 
 .socialmedia a {
     text-decoration: none;
@@ -82,4 +104,51 @@ article {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+.section img {
+    width: 200px;
+}
+
+.section-hist {
+    display: grid;
+    grid-template-columns: 1fr 25% 1fr;
+    grid-template-rows: 20% 80%;
+}
+
+.full-row-item {
+    grid-column: 1 / 4;
+    align-items: baseline;
+}
+
+.section-adventure {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px; 
+}
+
+.section-adventure img {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 150px;
+
+}
+
+/* .section-adventure text {
+    ;
+} */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.socialmedia {
+    position: absolute;
+    right: 10px;
+    bottom: 1px;
+    margin: 0;
 }
