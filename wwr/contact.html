@@ -45,16 +45,22 @@
                     <input type="text" id="fullname" name="fullname" required>
                 </div>
                 <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="usermail" name="usermail" required>
+                    <label for="useremail">Email</label>
+                    <input type="email" id="useremail" name="useremail" required>
                 </div>
             
                 <div class="purpose">
                     <div class="purpose-label">Message <br/>Purpose</div>
                     <div class="purpose-options">
-                        <label><input type="radio" name="purpose" value="general">General Inquiry</label>
-                        <label><input type="radio" name="purpose" value="question">Reservation Question</label>
-                        <label><input type="radio" name="purpose" value="suggestion">Website Suggestion</label>
+                        <!-- <input type="radio" id="purpose-general" name="purpose" value="general">
+                        <label for="purpose-general">General Inquiry</label> -->
+
+                        <label for="purpose-general">
+                            <input type="radio" id="purpose-general" name="purpose" value="general">General Inquiry</label>
+                        <label for="purpose-question">
+                            <input type="radio" id="purpose-question" name="purpose" value="question">Reservation Question</label>
+                        <label for="purpose-suggestion">
+                            <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">Website Suggestion</label>
                     </div>
                 </div>
 
