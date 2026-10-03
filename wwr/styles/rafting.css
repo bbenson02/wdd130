@@ -287,6 +287,8 @@ button:hover {
     background-color: var(--secondary-color);
 } 
 
+
+
 .map-form-layout {
     display: flex;
     gap: 20px;
