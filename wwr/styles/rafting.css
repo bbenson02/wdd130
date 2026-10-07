@@ -174,7 +174,7 @@ article {
 .section-staff {
     display: flex;
     justify-content: center;
-    flex-wrap: none;
+    flex-wrap: nowrap;
     gap: 5px;
 }
 
