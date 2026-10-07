@@ -174,7 +174,7 @@ article {
 .section-staff {
     display: flex;
     justify-content: center;
-    flex-wrap: no-wrap;
+    flex-wrap: none;
     gap: 5px;
 }
 
@@ -265,7 +265,7 @@ input, textarea, button {
 input[type="checkbox"] {
     width: 22px;
     height: 22px;
-    position: right;
+    /* position: right; */
     vertical-align: bottom;
     padding: 0.5px;
     margin-right: 10px;
