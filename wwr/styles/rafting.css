@@ -383,7 +383,7 @@ button:hover {
     
 }
 
-.index-layout button a {
+.index-layout-button a {
     color: inherit;        /* allows hyperlink to inherit color of parent (?) - in this case white*/
     text-decoration: none;
 }
@@ -457,7 +457,7 @@ button:hover {
     margin: 1rem;
 }
 
-#trips-layout-button {
+#trips-layout-button a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -466,24 +466,26 @@ button:hover {
     padding: 15px 100px;
     border-radius: 0.2px;
     background-color: var(--primary-color);
+    color: inherit;
     color: #fff;
     margin: 1rem;
-    width: 75%;
-}
-
-.trips-layout button {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.trips-layout button a {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    color: inherit;
+    width: 100%;
     text-decoration: none;
 }
+
+/* .trips-layout button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.trips-layout-button a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+    text-decoration: none;
+} */
 
 
 .trips-layout-section {
