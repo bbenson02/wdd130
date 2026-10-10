@@ -54,6 +54,10 @@ h1 {
     color: #fff /* white text - make sure there is enough contrast with the background-color */
 }
 
+h2 {
+    font-size: 1.75rem;
+}
+
 
 article {
     position: absolute;
@@ -66,6 +70,10 @@ article {
     color: #fff;
 }
 
+p {
+    font-size: 1.1rem;
+    color: #000;
+}
 
 /* Class Selectors */
 
@@ -107,6 +115,10 @@ article {
     width: 125px;
 }
 
+.hero article p {
+    color: #fff;
+}
+
 .section img {
     width: 200px;
 }
@@ -140,6 +152,11 @@ article {
     display: flex;
     justify-content: center;
     position: relative;
+    padding-top: 25px;
+}
+
+.footer p {
+    color: var(--accent1-color);
 }
 
 .socialmedia {
@@ -160,6 +177,16 @@ article {
     opacity: 1.0;
     color: var(--primary-color);
     background: none;
+
+        position: static;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 100%;
+    background-color: var(--accent2-color);
+    color: #fff;
+    margin: 1rem;
 }
 
 .contact-page-layout section {
@@ -169,7 +196,6 @@ article {
 .contact-page-layout p {
     line-height: .5px;
 }
-
 
 .section-staff {
     display: flex;
@@ -187,48 +213,6 @@ article {
     gap: 5px;
 }
 
-/* .contact-page-layout article {
-    box-sizing: border-box;
-    border: 1px solid #000;
-    background: transparent;
-    color: var(--accent2-color);
-    position: static;
-    width: 100%;
-    bottom: auto;
-    left: auto;
-}
-
-.contact-page-layout article img {
-    padding: 5px;
-} */
-
-/* ---------------------------------- */
-
-
-/* article {
-    position: absolute;
-    bottom: 5px;
-    right: -5px;
-    left: -7px;
-    width: 98%;
-    padding: 16px;
-    background-color: var(--secondary-color);
-    color: #fff;
-} */
-
-/* .section-adventure {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px; 
-}
-
-.section-adventure img {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    width: 150px;
-} */
 
 form {
     display: grid;
@@ -287,8 +271,6 @@ button:hover {
     background-color: var(--secondary-color);
 } 
 
-
-
 .map-form-layout {
     display: flex;
     gap: 20px;
@@ -296,14 +278,9 @@ button:hover {
     justify-content: center;
 }
 
-.map-container {
-    /* width: 40%; */
-}
-
 .form-container {
     width: 60%;
 }
-
 
 .form-item {
     display: grid;
@@ -331,7 +308,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-self: flex-start; 
-    
 }
 
 .purpose-options label {
@@ -339,3 +315,228 @@ button:hover {
     text-align: left;
 }
 
+/* Home Page Layout Class Selectors */
+.index-layout {
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+.index-layout body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.index-layout h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    position: absolute;
+    top: 420px;          
+    color: #fff;
+    background-color: var(--accent2-color);
+    line-height: 2.5rem;
+    opacity: 100%;
+}
+
+        /* Not sure why having this one active effects the border and location of the form */
+/* .index-layout p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #000 
+} */
+
+.index-layout form {
+    /* background-color: var(--secondary-color); */
+    /* align: center; */
+    /* grid-column: 2/3; */
+    border: var(--accent1-color) solid 3px;
+    border-radius: 0.8rem;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#flex-layout {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+#book-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-layout-button {
+    font-family: var(--body-font);
+    font-size: 1.5em;
+    padding: 15px;
+    border-radius: 0.2px;
+    background-color: var(--primary-color);
+    color: #fff;
+    /* margin: 1rem; */
+    width: 100%;
+    
+}
+
+.index-layout button a {
+    color: inherit;        /* allows hyperlink to inherit color of parent (?) - in this case white*/
+    text-decoration: none;
+}
+
+.index-layout article {
+    position: relative;
+    background-color: #fff;
+    color: var(--secondary-color);
+    /* border: #000 solid 0.1rem; */
+    height: auto;
+}
+
+.purpose {
+    padding: 1rem;
+    /* background-color: #ccc; */
+}
+
+/* Grid Container */
+.purpose-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+    /* border: #000 solid 1px; */
+    /* justify-items: center; */
+    
+}
+
+.purpose-grid-card {
+    display: flex;
+    flex-direction: column;    /*this made the images fit inside the columns*/
+    padding: 1rem;
+}
+
+.purpose-grid-card h3 {
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: var(--heading-font); 
+    border-bottom: var(--secondary-color) solid;
+}
+
+.purpose-grid-card img {
+    padding: 0.5rem;
+    width: 100%;
+    height: auto;
+}
+
+.purpose-grid-card p {
+    color: #000;
+    line-height: 1.5;
+}
+
+.purpose-grid-card ul {
+    color: #000;
+    line-height: 1.5;
+    padding-left: 30px;
+}
+
+/* Trips Page Class Selectors */
+
+
+.trips-layout h1 {
+    position: static;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 100%;
+    background-color: var(--accent2-color);
+    color: #fff;
+    margin: 1rem;
+}
+
+#trips-layout-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--body-font);
+    font-size: 1.5em;
+    padding: 15px 100px;
+    border-radius: 0.2px;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin: 1rem;
+    width: 75%;
+}
+
+.trips-layout button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.trips-layout button a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.trips-layout-section {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: baseline;
+}
+
+#trips-highlights {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: baseline;
+    font-size: 1.2rem;
+    
+}
+
+
+
+.trips-layout-section img {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 200px;
+}
+
+.trips-layout-section figcaption {
+    font-size: 2rem;
+}
+
+.trips-layout-table {
+    border-collapse: collapse;
+    border: #000 solid 2px;
+    margin: 25px auto;
+    font-size: 1.2rem;
+    /* min-width: 400px; */
+    width: 100%;
+}
+
+.trips-layout-table thead tr th {
+    background-color: var(--secondary-color);
+    color: #fff;
+    height: 50px;
+    text-align: center;
+
+}
+
+.trips-layout-table th,
+.trips-layout-table td {
+    padding: 10px 25px;
+    border-bottom: var(--secondary-color) solid;
+    color: #000;
+}

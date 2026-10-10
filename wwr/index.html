@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Rafting | Home</title>
+    <meta name="description" content="Home page for White Water Rafting company. Page includes a newsletter sign-up form,
+     call to action to schedule trips, and information about the purpose and offerings of the company.">
+    <meta name="author" content="Brelyn Benson">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body class="index-layout">
+    <header class="header">
+        <img src="images/wwr-logo.png" alt="White Water Rafting logo">
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero index-layout">
+            <img src="images/home-hero-img.jpg" alt="A team of rafters paddling vigorously down a rapid.">
+            <h1>White Water Rafting<br/>Your Next Adventure Awaits!</h1>
+        </div>
+        <div class="index-layout" id="flex-layout">
+            <form class="index-layout">
+                <fieldset>
+                <hgroup>
+                    <h2>Sign Up for Our Monthly Newsletter!</h2> 
+                    <p>Get a recap of the previous months trips, information about upcoming excursions,
+                         and exclusive access to deals and promotions!</p>
+                </hgroup>
+                <div>
+                    <label for="fullname">Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div>
+                    <label for="useremail">Email</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+                <div>
+                    <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe">Recieve notifications for new newsletters?</label>
+                </div>
+                <button type="submit">Subscribe!</button>
+                </fieldset>
+            </form>
+        
+        <div id="book-button">
+            <div>
+                <h2>Book a Trip</h2>
+            <button class="index-layout-button">
+                <a href="trips.html">BOOK A TRIP</a></button>
+            </div>
+        </div>
+    </div>
+        <section class="index-layout purpose">
+            <h2>Why Raft with Us?</h2>
+            <div class="purpose-grid-container">
+                <article class="purpose-grid-card">
+                    <h3>Adventure</h3>
+                    <p>Our goal is to share the love we have for river rafting and white water rapids with as many people 
+                        as we can.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusamus, repellendus ea a tenetur, 
+                        quasi dolor vitae impedit labore cupiditate deleniti nemo. Dolor quisquam libero perferendis ducimus 
+                        illo magnam laborum!</p>
+                </article>
+
+                <article class="purpose-grid-card">
+                    <h3>Trip Types</h3>
+                    <img src="images/team-raft-kayak.jpg">
+                    <p>We offer a range of trips for different experience levels, from absolute beginner to expert-supreme. 
+                        You can join our beginner rafting classes, or book a trip with one of our amazing guides to have 
+                        the adventure of a lifetime.</p>
+                         <ul>
+                            <li>Half-Day Trips (Beginner and Family Friendly)</li>
+                            <li>Day Trips</li>
+                            <li>Overnight Trips (Intermediate)</li>
+                            <li>Weekend Trips</li>
+                            <li>Multi-Day Trips (Experienced)</li>
+                        </ul>
+                </article>
+
+                <article class="purpose-grid-card">
+                    <h3>Accommodations</h3>
+                    <img src="images/gear-rentals.jpg">
+                    <p>We offer reasonably priced gear rentals (includig helmets, life-jackets, wet suits, etc.)</p>
+                    <p>Tent camping areas and RV hookups are located near the main office and launching areas. For 
+                        weekend and longer multi-day trips, camping and/or sleeping accommodations are included with 
+                        the booking. Meals are also included in multi-day trips by our cook.</p>
+                    <img src="images/river-camping.jpg">
+                    <p>Our media specialist will accommpany your trip to take photographs and video of your adventure 
+                        (digital downloads included in booking price).</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <p>&copy;2026 🌊 White Water Rafting 🌊 Brelyn Benson</p>
+            <!-- nav footer was class="socialmedia", I added it to footer, not sure if that actually helped me at all -->
+            <nav class="socialmedia">
+                <a href="https://instagram.com">
+                    <img src="images/instagram-icon.png" alt="Instagram Logo" width="50">
+                </a>
+                <a href="https://facebook.com">
+                    <img src="images/facebook-icon.png" alt="Facebook Logo" width="50">
+                </a>
+                <a href="https://youtube.com">
+                    <img src="images/youtube-icon.png" alt="Youtube Logo" width="50">
+                </a>
+            </nav>
+    </footer>
+</body>
+</html>
